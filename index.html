@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+    
+    <!--  Hello solarsystem Code -->
+    <script src="main.js"></script>
+    <script src="services/people.js"></script>
+    <script src="components/hello.js"></script>
+    <script src="components/about.js"></script>
+    <script src="components/people.js"></script>
+    <script src="components/person.js"></script>
+    
+    <!-- Visualizer and url -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body ng-app="main">
+    <a ui-sref="hello" ui-sref-active="active">Hello</a>
+    <a ui-sref="about" ui-sref-active="active">About</a>
+    <a ui-sref="people" ui-sref-active="active">People</a>
+    
+    <ui-view></ui-view>
+  </body> 
+</html>
